@@ -337,20 +337,7 @@ const ChatListDrawer: React.FC<Props> = (props) => {
               </ExpandableDrawerGroup>
             )}
 
-            <ExpandableDrawerGroup
-              label={t('app.starredBots')}
-              className="border-t pt-1">
-              {starredBots?.map((bot) => (
-                <DrawerItem
-                  key={bot.id}
-                  isActive={botId === bot.id && !conversationId}
-                  to={`bot/${bot.id}`}
-                  icon={<PiRobot />}
-                  labelComponent={bot.title}
-                  onClick={onClickNewBotChat}
-                />
-              ))}
-            </ExpandableDrawerGroup>
+
 
             <ExpandableDrawerGroup
               label={t('app.recentlyUsedBots')}

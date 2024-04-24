@@ -104,8 +104,8 @@ Resources:
               },
               "build": {
                 "commands": [
-                  "",
-                  "cd bedrock-claude-chat/cdk",
+                  "git clone git@github.com:al-mentor/almentor-gpt-agent.git",
+                  "cd almentor-gpt-agent/cdk",
                   "npm ci",
                   "cdk bootstrap",
                   "cdk deploy --require-approval never --all"
